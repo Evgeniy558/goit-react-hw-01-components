@@ -1,6 +1,10 @@
 import css from "./App.module.css";
+import { FriendList } from "./components/FriendList/FriendList";
 import { Profile } from "./components/Profile";
 import user from "./components/Profile/user.json";
+import { Statistic } from "./components/Statistics";
+import data from "./components/Statistics/data.json";
+import friends from "./components/FriendList/friends.json";
 
 function App() {
   return (
@@ -12,13 +16,8 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
+      <Statistic title="UPLOAD STATS" stats={data} />
+      <FriendList friends={friends} />
     </div>
   );
 }

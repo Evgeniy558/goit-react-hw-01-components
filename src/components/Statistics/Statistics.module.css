@@ -1,0 +1,32 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(241, 238, 238);
+  padding: 50px;
+  margin: auto;
+}
+.title {
+  display: block;
+  background-color: #fff;
+  padding: 25px;
+}
+.stat_list {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  display: block;
+  flex-direction: column;
+  padding: 10px;
+}
+.label {
+  display: block;
+  color: white;
+}
+.percentage {
+  padding: 5px;
+  display: block;
+  color: white;
+}
