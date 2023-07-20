@@ -1,0 +1,16 @@
+table {
+  margin: auto;
+  width: 400px;
+}
+thead > tr {
+  background-color: chartreuse;
+}
+td {
+  text-align: center;
+}
+.oddrow {
+  background-color: aliceblue;
+}
+.evenrow {
+  background-color: antiquewhite;
+}

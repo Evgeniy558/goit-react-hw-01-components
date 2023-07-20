@@ -6,7 +6,7 @@ export const FriendList = ({ friends }) => {
     <ul className={css.friend_list}>
       {friends.map(({ avatar, name, isOnline, id }) => {
         return (
-          <li kye={id} className={css.item}>
+          <li key={id} className={css.item}>
             <span className={css.status}>
               <svg
                 width="20"
@@ -29,4 +29,14 @@ export const FriendList = ({ friends }) => {
       })}
     </ul>
   );
+};
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      avatar: PropTypes.string,
+      name: PropTypes.string,
+      isOnline: PropTypes.bool,
+    })
+  ),
 };
