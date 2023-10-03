@@ -1,12 +1,12 @@
 import css from "./App.module.css";
 import { FriendList } from "./components/FriendList/FriendList";
 import { Profile } from "./components/Profile";
-import user from "./components/Profile/user.json";
+import user from "./data/user.json";
 import { Statistic } from "./components/Statistics";
-import data from "./components/Statistics/data.json";
-import friends from "./components/FriendList/friends.json";
+import data from "./data/data.json";
+
 import { TransactionHistory } from "./components/TransactionHistory";
-import transactions from "./components/TransactionHistory/transactions.json";
+import transactions from "./data/transactions.json";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         stats={user.stats}
       />
       <Statistic title="UPLOAD STATS" stats={data} />
-      <FriendList friends={friends} />
+      <FriendList />
       <TransactionHistory transactions={transactions} />
     </div>
   );
